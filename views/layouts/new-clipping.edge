@@ -1,0 +1,117 @@
+	@layout('layouts.user_base')
+        @section('content')
+				<div class="page-inner">
+					<div class="row">
+						
+						
+						
+						<div class="col-md-12">
+							<div class="card">
+								<div class="card-header">
+									<div class="card-title">New Clipping</div>
+								</div>
+								<div class="card-body">
+									<div class="mbill">
+					<form action="/user/add-clip/store-clip" method="POST" encType="multipart/form-data" class="form-sample">
+                    
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Press Clipping Index No.</label>
+                          <div class="col-sm-9">
+                            <input type="text" name="Press_Clipping_Index_No" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Caption</label>
+                          <div class="col-sm-9">
+                            <input type="text"  name="caption" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Source</label>
+                          <div class="col-sm-9">
+                            <select class="form-control" name="source">
+                              <option>media</option>
+                              <option>direct link</option>
+							   <option>Website</option>
+							    <option>Other</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                     <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Language</label>
+                          <div class="col-sm-9">
+                            <select class="form-control" name="language">
+                              <option>Odia</option>
+                              <option>English</option>
+							   <option>Hindi</option>
+							    <option>Other</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Keywords</label>
+                          <div class="col-sm-9">
+                              <input type="text" class="form-control" name="keywords" />
+                          </div>
+                        </div>
+                      </div>
+                       <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Url Link</label>
+                          <div class="col-sm-9">
+                              <input type="url" class="form-control" name="url_link" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Date Of Publication</label>
+                          <div class="col-sm-9">
+                              <input type="date" name="date" class="form-control" placeholder="dd/mm/yyyy"/>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Scan copy of clipping</label>
+                          <div class="col-sm-9">
+                            <input type="file" name="image" class="form-control-file" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   
+                    <div class="row">
+                     
+					  <button type="submit" class="btn btn-primary mr-2">Submit</button>
+					  <button type="reset" class="btn btn-light">Reset</button>
+                    </div>
+                  </form>
+						
+						
+						</div>
+						</div>
+						</div>
+						</div>
+		</div>
+			
+	</div>
+@endsection	    
+			
